@@ -1,6 +1,7 @@
 /* 
 Project - THC WEB DEVELOPMENT COMPANY PORTFOLIO
 Author - Hein Htet
+Preview - https://heinhtet-soe.github.io/tec_company/index.html
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Saira:wght@300&display=swap');
@@ -40,6 +41,10 @@ a {
 
 .title {
     font-size: 2.1rem;
+}
+
+.btn-info {
+    background-color: var(--primary-color) !important;
 }
 
 
@@ -365,6 +370,49 @@ a {
 }
 
 
+/* # Other Pages -------- */
+
+#banner {
+    margin-top: 117px;
+    margin-bottom: 50px;
+    padding: 0px 20px;
+}
+
+#banner .page-banner {
+    background-image: url(../images/Slider\ 3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+    background-color: rgba(6, 42, 53, 0.5);
+    width: 100%;
+    height: 400px;
+}
+
+.banner-content div:nth-child(1) a {
+    display: inline-block;
+    font-weight: 500;
+    margin: 0px 10px;
+}
+
+
+/* # Contact --- */
+
+.contact form .form-control {
+    border: 2px solid transparent;
+    background-color: rgba(0, 132, 172, 0.096);
+    transition: all 0.2s ease-in-out;
+}
+
+.contact form .form-control:focus {
+    border: 2px solid var(--primary-color);
+    outline: none;
+    box-shadow: none;
+    background-color: rgba(0, 132, 172, 0.048);
+    color: var(--font-color);
+}
+
+
 /* # Back to top --- */
 
 .back-to-top {
@@ -400,49 +448,6 @@ a {
 .back-to-top.active {
     visibility: visible;
     opacity: 1;
-}
-
-
-/* # Other Pages -------- */
-
-#banner {
-    margin-top: 117px;
-    margin-bottom: 50px;
-    padding: 0px 20px;
-}
-
-#banner .page-banner {
-    background-image: url(../images/Slider\ 3.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-blend-mode: darken;
-    background-color: rgba(6, 42, 53, 0.5);
-    width: 100%;
-    height: 400px;
-}
-
-.banner-content div:nth-child(1) a {
-    display: inline-block;
-    font-weight: 500;
-    margin: 0px 10px;
-}
-
-
-/* # Contact --- */
-
-form .form-control {
-    border: 2px solid transparent;
-    background-color: rgba(0, 132, 172, 0.096);
-    transition: all 0.2s ease-in-out;
-}
-
-form .form-control:focus {
-    border: 2px solid var(--primary-color);
-    outline: none;
-    box-shadow: none;
-    background-color: rgba(0, 132, 172, 0.048);
-    color: var(--font-color);
 }
 
 
@@ -543,5 +548,11 @@ form .form-control:focus {
     }
     #banner .page-banner {
         height: 300px;
+    }
+    .btn-carousel {
+        width: 100px !important;
+        height: 30px !important;
+        font-size: 14px;
+        line-height: 14px;
     }
 }
